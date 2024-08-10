@@ -3,18 +3,6 @@ This is done by Yunjing Yao, Zihan Liu and Sianna Fang
 
 This repository contains code to analyze bike-sharing demand across multiple cities, with a focus on understanding the impact of weather conditions, time of day, and city-specific trends.
 
-## Project Structure
-
-\```
-.
-├── data/                       # Directory containing raw and processed datasets
-├── notebooks/
-│   └── Final_Group_Project.ipynb  # Jupyter Notebook with analysis code
-├── results/                    # Directory for storing results and figures
-├── README.md                   # Project overview and instructions
-└── requirements.txt            # List of required Python packages
-\```
-
 ## Installation
 
 To get started with this project, follow these steps:
@@ -69,12 +57,4 @@ city_grouped = data.groupby(['city', 'hour'])['count'].sum().reset_index()
 ## Results and Visualizations
 
 The results of the analysis are presented in various visualizations such as histograms, scatter plots, and bar charts, which help illustrate the key findings related to weather impacts, temporal demand patterns, and city-specific trends.
-
-## Contributing
-
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+.
