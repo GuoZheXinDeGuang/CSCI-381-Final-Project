@@ -8,8 +8,8 @@ This repository contains code to analyze bike-sharing demand across multiple cit
 To get started with this project, follow these steps:
 
 1. **Clone the repository**:
-    git clone https://github.com/GuoZheXinDeGuang/CSCI-381-Final-Project.git and
-    cd CSCI-381-Final-Project
+    `git clone https://github.com/GuoZheXinDeGuang/CSCI-381-Final-Project.git` and
+    `cd CSCI-381-Final-Project`
 
 2. **Install the required dependencies**:
 Python 3.x
