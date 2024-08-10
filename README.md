@@ -9,8 +9,8 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository**:
     \```bash
-    git clone https://github.com/yourusername/bike-sharing-analysis.git
-    cd bike-sharing-analysis
+    git clone [https://github.com/GuoZheXinDeGuang/CSCI-381-Final-Project.git]
+    cd CSCI-381-Final-Project
     \```
 
 2. **Install the required dependencies**:
