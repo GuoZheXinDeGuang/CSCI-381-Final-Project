@@ -28,33 +28,14 @@ Jupyter Notebook
 2. **Run the analysis**:
    - The notebook includes steps for data loading, preprocessing, exploratory data analysis (EDA), weather impact analysis, and visualization of results.
 
-# Key Functions and Code Snippets
+## Key Features
 
-## Data Preprocessing
-data.fillna(method='ffill', inplace=True)
-data['hour'] = pd.to_datetime(data['timestamp']).dt.hour
+1. **Data Preprocessing**: Cleans and prepares the dataset, handling missing values and extracting key features like the hour of the day.
 
-## Exploratory Data Analysis (EDA)
-plt.figure(figsize=(10, 6))
-sns.histplot(data['hour'], kde=False, bins=24)
-plt.title('Distribution of Bike Rentals by Hour')
-plt.xlabel('Hour of the Day')
-plt.ylabel('Number of Rentals')
-plt.show()
+2. **Exploratory Data Analysis (EDA)**: Visualizes data to uncover trends and patterns in bike rental behavior across different times and conditions.
 
-## Weather Impact Analysis
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='temperature', y='count', data=data)
-plt.title('Bike Rentals vs. Temperature')
-plt.xlabel('Temperature (°C)')
-plt.ylabel('Number of Rentals')
-plt.show()
+3. **Weather Impact Analysis**: Analyzes the relationship between weather conditions (e.g., temperature) and bike rental demand.
 
-## City-Specific Analysis
-city_grouped = data.groupby(['city', 'hour'])['count'].sum().reset_index()
-\```
+4. **City-Specific Insights**: Examines rental patterns unique to each city, providing targeted recommendations for optimization.
 
-## Results and Visualizations
-
-The results of the analysis are presented in various visualizations such as histograms, scatter plots, and bar charts, which help illustrate the key findings related to weather impacts, temporal demand patterns, and city-specific trends.
-.
+5. **Machine Learning Analysis**: Develops and evaluates predictive models to forecast bike rental demand, utilizing features like weather, time, and location.
