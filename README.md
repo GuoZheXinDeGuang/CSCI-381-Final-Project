@@ -28,14 +28,13 @@ Jupyter Notebook
 2. **Run the analysis**:
    - The notebook includes steps for data loading, preprocessing, exploratory data analysis (EDA), weather impact analysis, and visualization of results.
 
-## Key Functions and Code Snippets
+# Key Functions and Code Snippets
 
-\```python
-# Data Preprocessing
+## Data Preprocessing
 data.fillna(method='ffill', inplace=True)
 data['hour'] = pd.to_datetime(data['timestamp']).dt.hour
 
-# Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 plt.figure(figsize=(10, 6))
 sns.histplot(data['hour'], kde=False, bins=24)
 plt.title('Distribution of Bike Rentals by Hour')
@@ -43,7 +42,7 @@ plt.xlabel('Hour of the Day')
 plt.ylabel('Number of Rentals')
 plt.show()
 
-# Weather Impact Analysis
+## Weather Impact Analysis
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x='temperature', y='count', data=data)
 plt.title('Bike Rentals vs. Temperature')
@@ -51,7 +50,7 @@ plt.xlabel('Temperature (°C)')
 plt.ylabel('Number of Rentals')
 plt.show()
 
-# City-Specific Analysis
+## City-Specific Analysis
 city_grouped = data.groupby(['city', 'hour'])['count'].sum().reset_index()
 \```
 
